@@ -44,6 +44,7 @@ Make sure you have the following components installed in your machine
    5. Login with `nacos/nacos`
    6. Once services get started, you should see all services in the service list
 ### Prepare Database
+   1. Run sqls under sql folder in MySql Workbench
 ### Run Main Services 
    1. Open the project through intellij
    2. Install `Spring Initializr and Assistant`
