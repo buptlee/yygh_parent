@@ -24,6 +24,8 @@ Make sure you have the following components installed in your machine
    5. Open Terminal through Docker Desktop for `mymongo`
    6. Run `mongosh` goes into mongo db shell
    7. Run `show dbs` to see all existing databases
+   8. Run `use $dbname` to switch between databases, for example, you can run `use yygh_hosp` to create and navigate into the db
+   9. Run `show collections` to show all the existing collections
 2. Install Redis
    1. Open command window
    2. Run `docker run --name my-redis -p 6379:6379 -d redis`
@@ -49,3 +51,10 @@ Make sure you have the following components installed in your machine
    1. Open the project through intellij
    2. Install `Spring Initializr and Assistant`
    3. Restart the Intellij and you are good to go
+   4. You should find all application configurations in the `Run/Debug Configurations` window
+   5. Run those configurations one by one to start all services.
+   6. Once the services get started, you can open nacos to see how the running services
+   7. You can also test each service through swagger page.
+### Test through swagger page
+   1. Open Browser and enter the following address `http://localhost:8201/swagger-ui.html`
+   2. Each service owns its own port, you can find the port number in each services `application.properties` file. The file locates in `${serviceName}/src/main/resources/application.properties`
